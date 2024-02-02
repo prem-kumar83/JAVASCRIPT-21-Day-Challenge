@@ -1,0 +1,1 @@
+document.getElementById("dynamicDiv").innerHTML= "<p> Today, i completed Javascript challenges Day8</p>";
