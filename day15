@@ -1,0 +1,16 @@
+//Create a function that takes a callback function as an argument
+function simulateAsync(callback) {
+
+    setTimeout(function() {
+        
+        callback();
+    }, 2000); 
+}
+
+// A separate callback function to be passed into simulateAsync
+function callbackFunction() {
+    console.log("Hello Buddy, today JS challenges day15, Asynchronous operation completed!");
+}
+
+// Call simulateAsync and pass the callback function as an argument
+simulateAsync(callbackFunction);
