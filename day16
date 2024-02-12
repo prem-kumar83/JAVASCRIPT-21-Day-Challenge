@@ -1,0 +1,15 @@
+function simulateAsync() {
+    return new Promise((resolve, reject) => {
+       
+        setTimeout(() => {
+            resolve("Asynchronous operation completed!");
+        }, 2000); 
+    });
+}
+simulateAsync()
+    .then(message => {
+        console.log(message); 
+    })
+    .catch(error => {
+        console.error("An error occurred:", error); // Handle errors if necessary
+    });
