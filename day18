@@ -1,0 +1,10 @@
+const numbers = [1, 2, 3, 4, 5];
+
+const multiply = numbers.map(num => num * 2);
+console.log("Multiplication number:", multiply);
+
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log("Even numbers:", evenNumbers);
+
+const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+console.log("Sum of numbers:", sum);
