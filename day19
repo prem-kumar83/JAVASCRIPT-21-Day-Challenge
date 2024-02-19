@@ -1,0 +1,16 @@
+// Define function to save data to local storage
+function saveToLocalStorage(key, data) {
+    localStorage.setItem(key, JSON.stringify(data));
+}
+
+// Define function to retrieve data from local storage
+function retrieveFromLocalStorage(key) {
+    const data = localStorage.getItem(key);
+    return JSON.parse(data);
+}
+
+const user = { name: 'Prem', age: 30 };
+saveToLocalStorage('userData', user);
+
+const retrievedUser = retrieveFromLocalStorage('userData');
+console.log('Retrieved user:', retrievedUser);
